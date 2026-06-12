@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meri Pehli Website</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial;
+      text-align: center;
+    }
+    h1 {
+      color: blue;
+      margin-top: 50px;
+    }
+    p {
+      color: gray;
+      font-size: 18px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <img src="https://via.placeholder.com/150" alt="Logo">
+
+<h1>Namaste! Meri Website Par Aaye Ho 🙏</h1>
+
+<p>Yeh meri pehli website hai.</p>
+
+<h2 id="clock"></h2>
+</head>
+<body>
+  <h1>Namaste! Meri Website par Aaye Ho 🙏</h1>
+  <p>Yeh meri pehli website hai!</p>
+  <button onclick="alert('Namaste! Sampark karne ke liye dhanyavaad.')">
+  Mujhse Sampark Karo
+</button>
+<h2 id="clock"></h2>
+
+<script>
+function updateClock() {
+  let now = new Date();
+  document.getElementById("clock").innerHTML =
+    now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+</body>
+</html>
